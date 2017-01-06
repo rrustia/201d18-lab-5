@@ -54,7 +54,10 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a,b,c){ //eslint-disable-line
-
+  var sumArray = [];
+  sumArray[0] = a + b + c;
+  sumArray[1] = a * b * c;
+  sumArray[2] = 'Third element:  \"' + a + ' and ' + b + ' and ' + c
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
