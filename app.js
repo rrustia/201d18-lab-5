@@ -59,9 +59,7 @@ function sumAndMultiply(a,b,c){ //eslint-disable-line
   var multipleArray = multiply(a,b);
   multipleArray = multiply(multipleArray[0],c);
   var messageOne =  a + ' and ' + b + ' and ' + c + ' sum to ' + sumArray[0] + '.';
-  console.log(messageOne);
   var messageTwo = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multipleArray[0] + '.';
-  console.log(messageTwo);
   return [sumArray[0], multipleArray[0], messageOne, messageTwo];
 }
 
@@ -117,8 +115,6 @@ function multiplyArray(testArray){ //eslint-disable-line
   for (var index = 1; index < counter; index++) {
     multiplyTemp = multiply(multiplyTemp[0],testArray[index]);
   }
-  console.log(multiplyTemp[0]);
-  console.log(multiplyTemp[0], 'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + multiplyTemp[0] + '.');
   return [multiplyTemp[0], 'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + multiplyTemp[0] + '.'];
 }
 
